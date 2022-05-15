@@ -1,0 +1,10 @@
+[Unit]
+Description=YBZ's tm1638 clock
+
+[Service]
+ExecStart=/usr/bin/env python3 /opt/tm1638/tm1638.py
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
